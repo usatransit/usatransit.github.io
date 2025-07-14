@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>USA TRANSIT</title>
+<title>USA Transit LLC</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="main.css" />
 </head>
-<body style="background-color: #282828;">
 
-	<h1 style="text-align: center; color: white; font-family: Arial, Helvetica, sans-serif; font-size: 50px;">USA TRANSIT</h1>
+<body class="backcolor">
+
+	<div class="wrapper">
+		<div class="inner backcolor">
+			<div class="flexcontainer center"><h1 class="textcolor borderbox">USA&nbsp;Transit&nbsp;LLC</h1></div>
+		</div>
+	</div>
+
+	<div class="widesection">
+		<div class="contactword">Inquiries:</div>
+		<div class="contactform">
+			<form action="https://api.web3forms.com/submit" method="POST">
+				<div class="flexcontainer">
+					<!-- Replace with your Access Key -->
+					<input type="hidden" name="access_key" value="21371584-3aa6-446a-8b07-a23f1f2bc452">
+					<!-- Form Inputs. Each input must have a name="" attribute -->
+					<input type="text" name="name" placeholder="Name" required>
+					<input type="email" name="email" placeholder="Email" required>
+					<textarea name="message" placeholder="Message" rows="8" required></textarea>
+					<!-- Honeypot Spam Protection -->
+					<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+					<!-- Custom Confirmation / Success Page -->
+					<input type="hidden" name="redirect" value="https://usatransit.org/thanks.html">
+					<button type="submit">Send</button>
+				</div>
+			</form>
+		</div>
+	</div>
 	
+<div class="footer"><div>USA Transit LLC</div></div>
+
 </body>
 </html>

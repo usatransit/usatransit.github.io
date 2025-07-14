@@ -1,0 +1,228 @@
+/* Fonts */
+
+@font-face {
+	font-family: Metropolis;
+	src: url(Metropolis-Regular.otf);
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: Metropolis;
+	src: url(Metropolis-Medium.otf);
+	font-weight: 500;
+}
+
+
+@font-face {
+	font-family: Metropolis;
+	src: url(Metropolis-Black.otf);
+	font-weight: 900;
+}
+
+
+/* Colors */
+
+.backcolor {
+	background-color: #282828;
+}
+
+.textcolor {
+	color: #ebebed;
+}
+
+
+/* Styling */
+
+html {
+	font-size: 10px;
+	font-family: serif;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	font-size: 11rem;
+	line-height: 11rem;
+	padding: 0;
+	margin: 0;
+	font-family: Metropolis;
+	font-weight: 400;
+}
+
+p {
+	font-size: 2rem;
+	line-height: 4rem;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 5rem;
+	font-family: Metropolis;
+	font-weight: 400;
+}
+
+@media screen and (max-width: 900px) {
+	h1 {
+		font-size: 5rem;
+		line-height: 5rem;
+	}
+}
+
+h1.borderbox {
+	border-style: solid;
+	border-width: 5px;
+	border-color: #ebebed;
+	border-radius: 10px;
+	margin: 5rem 1rem;
+	padding: 1rem;
+}
+
+.flexcontainer {
+	display: flex;
+}
+
+.flexcontainer.center {
+	justify-content: center;
+}
+
+.flexcontainer.nav {
+	justify-content: space-between;
+}
+
+.flexcontainer.nav > div {
+	background-color: #162044;
+	font-size: 1.6rem;
+	line-height: 1.6rem;
+	margin: 1.2rem 0;
+	padding: 1rem;
+	color: #ebebed;
+	text-align: center;
+	border-radius: 10px;
+	font-family: Metropolis;
+	text-transform: uppercase;
+}
+
+.navbar {
+	padding: 0;
+	margin: 0;
+	height: 6rem;
+	width: 100%;
+	position: sticky;
+	top: 0;
+	background-color: pink;
+	z-index: 99;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.footer {
+	background-color: #1d1d1d;
+	height: 10rem;
+	width: 100%;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-flow: row wrap;
+}
+
+.footer > div {
+	font-family: Metropolis;
+	font-weight: 400;
+	color: white;
+	font-size: 2rem;
+	line-height: 2rem;
+	height: 2rem;
+}
+
+.widesection {
+	background-color: grey;
+	min-height: 30rem;
+	width: 100%;
+	margin-bottom: 20rem;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-flow: column wrap;
+	padding: 3rem 0;
+}
+
+
+.inner {
+	width: 60%;
+}
+
+@media screen and (max-width: 900px) {
+	.inner {
+		width: 80%;
+	}
+}
+
+.inner > p {
+	color: #ebebed;
+}
+
+
+
+/* Contact Section */
+
+.contactword {
+	font-family: Metropolis;
+	font-weight: 400;
+	color: white;
+	font-size: 3rem;
+	line-height: 3rem;
+	text-align: center;
+}
+
+.contactform {
+	width: 40%;
+	margin-top: 2rem;
+}
+
+.contactform > form > .flexcontainer {
+	flex-flow: column wrap;
+}
+
+.contactform > form > div > input,
+.contactform > form > div > textarea,
+.contactform > form > div > button {
+	font-family: Metropolis;
+	font-size: 2rem;
+	line-height: 2rem;
+	padding: 1rem;
+	margin-top: 1rem;
+	left: 0;
+	right: 0;
+	border-radius: 5px;
+	border: none;
+	background-color: #d1d1d1;
+}
+
+.contactform > form > div > textarea {
+	resize: vertical;
+}
+
+	
+.contactform > form > div > button {
+		background-color: #0059f7;
+		color: white;
+		font-weight: 500;
+	}
+	
+.contactform > form > div > button:hover {
+		background-color: #3179f9;
+		cursor: pointer;
+	}
+
+@media screen and (max-width: 900px) {
+	.contactform  {
+		width: 80%;
+	}
+}
