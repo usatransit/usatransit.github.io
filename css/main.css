@@ -523,6 +523,12 @@ h6.hero {
 	opacity: 0.9;
 }
 
+@media screen and (min-width: 769px) {
+	.photoflexcontainer.vert {
+		margin-top: 5rem;
+	}
+}
+
 #servicesinfo .photoflexcontainer > div > img {
 	border-radius: 0.5rem;
 }
