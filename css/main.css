@@ -24,16 +24,6 @@ body {
 	background-color: #242943;
 }
 
-/* 
-h1 5
-h2 4.5
-h3 4
-h4 3.5
-h5 3
-h6 2.5
-h7 2 
-*/
-
 h1 {
 	font-size: 5rem;
 	line-height: 5rem;
@@ -360,6 +350,12 @@ h6.hero {
 	flex-flow: column wrap;
 }
 
+@media screen and (max-width: 768px) {
+	#contact {
+		margin: 20rem 0 5rem 0;
+	}
+}
+
 .contactflexcontainer {
 	display: flex;
 	flex-flow: column wrap;
@@ -514,7 +510,7 @@ h6.hero {
 
 .photoflexcontainer > a:hover {
 	background-color: #ffffff;
-	border-radius: 1rem;
+	border-radius: 1.1rem;
 }
 
 .photoflexcontainer > a > img:hover {
