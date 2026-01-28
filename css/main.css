@@ -485,15 +485,21 @@ h6.hero {
 }
 
 .photoflexcontainer > img {
-	max-width: 32.3%;
+	max-width: 32.33%;
 	border-radius: 5px;
 	object-fit: contain;
 	margin-bottom: 1.5%;
 }
 
 .photoflexcontainer > a, #servicesinfo .photoflexcontainer > div {
-	max-width: 32.3%;
+	max-width: 32.33%;
 	margin-bottom: 1.5%;
+}
+
+@media screen and (min-width: 1921px) {
+	.photoflexcontainer > img, .photoflexcontainer > a, #servicesinfo .photoflexcontainer > div {
+		max-width: 23.875%
+	}
 }
 
 .photoflexcontainer > a > img, #servicesinfo .photoflexcontainer > div > img {
@@ -570,6 +576,12 @@ h6.hero {
 	#servicesinfo .photoflexcontainer > div > h3 {
 		min-height: 6rem;
 	}
+	#servicesinfo .photoflexcontainer > .emptyspacer {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 1921px) {
 	#servicesinfo .photoflexcontainer > .emptyspacer {
 		display: block;
 	}
